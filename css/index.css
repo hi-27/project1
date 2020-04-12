@@ -1,0 +1,188 @@
+.table1{
+    border-collapse: separate;
+    font-weight: bold;
+    font-size: larger;
+    background-color: #47a7ff;
+    width: 100%;
+    letter-spacing: 10px;
+
+}
+
+.table1 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 22px;
+}
+.table1 a:hover{
+    color: lightgoldenrodyellow;
+}
+#th1{/*首页*/
+    font-size: larger;
+    font-weight: bold;
+    background-color: #7addff;
+    width: 100px;
+    margin-left: 25px;
+    padding-left:0;
+}
+#person{
+    text-align: right;
+    padding-right: 20px;
+}
+.dropbtn {
+    background-color: #47a7ff;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.dropdown-content a {
+    margin-left: 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    letter-spacing: 2px;
+}
+.dropdown-content a:hover{
+    letter-spacing: 2px;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #7addff;
+}
+.dropdown-content >p > a >img{
+    width: 13px;
+    padding-right: 2px;
+}/*所有的个人中心*/
+#carousel{
+    width: 730px;
+    height: 520px;
+    background-color: #6da977;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#picture{
+    position: absolute;
+}
+#list{
+    position: absolute;
+}
+#list>li{
+    list-style: circle;
+    cursor: pointer;
+    color: black;
+    float: left;
+}
+#list>li:hover{
+    list-style: disc;
+    color: black;
+}
+#list>.on{
+    list-style: disc;
+    color: black;
+}
+#carousel>#picture>li> img{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}/*首页大图*/
+.show{
+    margin-left: 60px;
+    margin-right: 100px;
+}
+.show>.picexhibit{
+    display:grid;
+    grid-template-columns: 400px 400px 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.show>.picexhibit>div{
+    margin: 5px;
+    width: 350px;
+    height: 345px;
+    background-color: #6da977;
+    border-radius: 5px;
+}
+div.show>div.picexhibit>div>a>img{
+    margin: 12px;
+}
+.show>.picexhibit>div>a{
+    text-decoration: none;
+}
+.show>.picexhibit>div>a>h3{
+    margin-top: 0;
+    margin-bottom: 3px;
+    margin-left:5px;
+    font-family: "Comic Sans MS";
+}
+.show>.picexhibit>div>a>p{
+    margin-top: 0;
+    margin-left:5px;
+    font-family: "Comic Sans MS";
+    width: 330px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.show h2{
+    font-family: "Comic Sans MS";
+    margin-left: 10px;
+}
+#up>img{
+    width: 20px;
+}
+#refresh>img{
+    width: 20px;
+}
+#up{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+#refresh{
+    position: fixed;
+    right: 10px;
+    bottom: 45px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+footer{
+    background-color: #47a7ff;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 12px;
+    margin: 0;
+    height: 30px;
+}
+footer>p{
+    padding-top: 12px;
+}

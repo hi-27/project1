@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>browse</title>
+    <link rel="stylesheet"type="text/css"href="css/minireset.css">
+    <link type="text/css" rel="stylesheet"href="css/browse.css">
+    <script type="text/javascript" src="js/change.js"></script>
+</head>
+<body>
+<nav>
+    <table class="table1">
+        <td><a href="index.html">首页 </a></td>
+        <td><div id="th1"><a href="browsepage.html"> 浏览页 </a></div></td>
+        <td><a href="search.html">搜索页 </a></td>
+        <td id="person">
+            <div class="dropdown">
+                <button class="dropbtn">个人中心</button>
+                <div class="dropdown-content">
+                    <p><a href="upload.html"><img src="travel-images/arrow.jpg">上传</a></p>
+                    <p><a href="myphoto.html"><img src="travel-images/camera.jpg" >我的照片</a></p>
+                    <p><a href="myfavour.html"><img src="travel-images/star.jpg" >我的收藏</a></p>
+                    <p><a href="login.html"><img src="travel-images/log.jpg">登入</a></p>
+                </div>
+            </div>
+        </td>
+    </table>
+</nav>
+<div>
+  <table class="filter">
+      <td>theme：<select name="theme" id="theme">
+          <option>--select content--</option>
+          <option value="cathedral">cathedral</option>
+          <option value="tower">tower</option>
+          <option value="square">square</option>
+          <option value="meadow">meadow</option>
+      </select></td>
+      <td>country：<select name="country" id="country"onchange="change()">
+          <option>--select country--</option>
+          <option value="china">China</option>
+          <option value="italy">Italy</option>
+          <option value="america">America</option>
+          <option value="japan">Japan</option>
+      </select></td>
+      <td>city：<select name="city" id="city">
+      </select>
+      </td>
+      <td><input type="button"id="filter"value="filter"onclick="alert('filter')"></td>
+  </table>
+</div><!--二级筛选 -->
+<aside>
+    <div class="aside">
+        <input type="text"placeholder="filter by title"><input type="button"value="filter"onclick="alert('filter')">
+    </div>
+    <div class="aside">
+       <dl>
+         <dt>hot country</dt>
+           <dd><a href="browsepage.html">China</a></dd>
+           <dd><a href="browsepage.html">Japan</a></dd>
+           <dd><a href="browsepage.html">Australia</a></dd>
+           <dd><a href="browsepage.html">Greece</a></dd>
+       </dl>
+    </div>
+    <div class="aside">
+       <dl>
+            <dt>hot theme</dt>
+            <dd><a href="browsepage.html">meadow</a></dd>
+            <dd><a href="browsepage.html">cathedral</a></dd>
+            <dd><a href="browsepage.html">tower</a></dd>
+            <dd><a href="browsepage.html">square</a></dd>
+            <dd><a href="browsepage.html">scenery</a></dd>
+       </dl>
+    </div>
+</aside>
+<div class="centre">
+    <div id="pictures">
+        <a href="picture.html"><img src="travel-images/square/square-medium/1.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/2.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/3.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/4.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/5.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/6.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/7.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/8.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/9.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/10.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/11.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/12.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/13.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/14.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/15.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/16.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/17.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/18.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/19.jpg"></a>
+        <a href="picture.html"><img src="travel-images/square/square-medium/20.jpg"></a>
+    </div>
+    <footer class="num">
+        <p>&#60  <a href="browsepage.html"><ins>1</ins></a>  <a href="#"onclick="move1()">2</a>  <a  href="#"onclick="move1()">3</a>  <a  href="#"onclick="move2()">4</a> &#62</p>
+    </footer>
+</div>
+<footer class="copyright">
+    <p>&#169桃纸吧</p>
+</footer>
+
+</body>
+</html>
+
